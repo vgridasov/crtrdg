@@ -7,4 +7,4 @@ class IndexView(generic.ListView):
     context_object_name = 'latest_object_list'
 
     def get_queryset(self):
-        return CartridgeModel.objects.order_by('-v_date')[:10]
+        return CartridgeModel.objects.order_by('-reg_date')[:10]
